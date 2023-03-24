@@ -1,0 +1,859 @@
+{
+	"info": {
+		"_postman_id": "132d465f-a953-4e6d-b5a9-773d51ebdd63",
+		"name": "Eventori",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16666203"
+	},
+	"item": [
+		{
+			"name": "Catalogues",
+			"item": [
+				{
+					"name": "List Catalogues",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:40008/api/v1/models/list",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Catalogues",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:40008/api/v1/models/list",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 11:57:51 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "380"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success retrive data\",\n    \"title\": \"\",\n    \"data\": {\n        \"page_number\": 0,\n        \"page_size\": 0,\n        \"records\": [\n            {\n                \"id\": 1,\n                \"model_name\": \"model 1\",\n                \"image_url\": \"https://images.unsplash.com/photo-1633157953349-75c66213ca2f\",\n                \"description\": \"model description\",\n                \"model_schedules\": [\n                    {\n                        \"id\": 1,\n                        \"model_id\": 1,\n                        \"schedule_date\": \"2021-12-12T14:04:24+07:00\"\n                    }\n                ]\n            }\n        ],\n        \"total_record_count\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "List Catalogues By Model Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:40008/api/v1/models/:models_id",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								":models_id"
+							],
+							"variable": [
+								{
+									"key": "models_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Catalogues By Model Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:40008/api/v1/models/:models_id",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										":models_id"
+									],
+									"variable": [
+										{
+											"key": "models_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 12:24:19 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "380"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success retrive data\",\n    \"title\": \"\",\n    \"data\": {\n        \"page_number\": 0,\n        \"page_size\": 0,\n        \"records\": [\n            {\n                \"id\": 1,\n                \"model_name\": \"model 1\",\n                \"image_url\": \"https://images.unsplash.com/photo-1633157953349-75c66213ca2f\",\n                \"description\": \"model description\",\n                \"model_schedules\": [\n                    {\n                        \"id\": 1,\n                        \"model_id\": 1,\n                        \"schedule_date\": \"2021-12-12T14:04:24+07:00\"\n                    }\n                ]\n            }\n        ],\n        \"total_record_count\": 1\n    }\n}"
+						},
+						{
+							"name": "List Catalogues By Model Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:40008/api/v1/models/:models_id",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										":models_id"
+									],
+									"variable": [
+										{
+											"key": "models_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 13:24:15 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "558"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success retrive data\",\n    \"title\": \"\",\n    \"data\": {\n        \"page_number\": 0,\n        \"page_size\": 0,\n        \"records\": [\n            {\n                \"id\": 1,\n                \"model_name\": \"model 1\",\n                \"image_url\": \"4efda3c9-b2e2-4d76-a1a8-32a1f924c921.jpg\",\n                \"description\": \"model description\",\n                \"model_schedules\": [\n                    {\n                        \"id\": 1,\n                        \"model_id\": 1,\n                        \"schedule_date\": \"2021-12-12T14:04:24+07:00\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"model_id\": 1,\n                        \"schedule_date\": \"2021-12-12T14:04:24+07:00\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"model_id\": 1,\n                        \"schedule_date\": \"2021-12-12T14:04:24+07:00\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"model_id\": 1,\n                        \"schedule_date\": \"2021-12-12T14:04:24+07:00\"\n                    }\n                ]\n            }\n        ],\n        \"total_record_count\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Catalogues",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model_name",
+									"value": "model 2",
+									"description": "M",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "M",
+									"type": "file",
+									"src": "/C:/Users/eldho/Downloads/download.jpg"
+								},
+								{
+									"key": "description",
+									"value": "description example",
+									"description": "M",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:40008/api/v1/models/create",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Catalogues",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "model_name",
+											"value": "model 2",
+											"description": "M",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"description": "M",
+											"type": "file",
+											"src": "/C:/Users/eldho/Downloads/download.jpg"
+										},
+										{
+											"key": "description",
+											"value": "description example",
+											"description": "M",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:40008/api/v1/models/create",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 13:04:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success create data\",\n    \"title\": \"\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Catalogues By Model Id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model_name",
+									"value": "model 1 ",
+									"description": "O",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "O",
+									"type": "file",
+									"src": "/C:/Users/eldho/Downloads/download.jpg"
+								},
+								{
+									"key": "description",
+									"value": "test",
+									"description": "O",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:40008/api/v1/models/update/:model_id",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"update",
+								":model_id"
+							],
+							"variable": [
+								{
+									"key": "model_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Cataogues By Model Id",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "model_name",
+											"value": "model 1 update",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/eldho/Downloads/download.jpg"
+										},
+										{
+											"key": "description",
+											"value": "model description update",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:40008/api/v1/models/update/:model_id",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"update",
+										":model_id"
+									],
+									"variable": [
+										{
+											"key": "model_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 13:28:42 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success create data\",\n    \"title\": \"\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Catalogues",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:40008/api/v1/models/delete/:model_id",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"delete",
+								":model_id"
+							],
+							"variable": [
+								{
+									"key": "model_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Catalogues",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:40008/api/v1/models/delete/:model_id",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"delete",
+										":model_id"
+									],
+									"variable": [
+										{
+											"key": "model_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 14:44:10 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success delete data\",\n    \"title\": \"\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Schedules",
+			"item": [
+				{
+					"name": "List Schedules By Model Id Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:40008/api/v1/models/schedules/:models_id",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"schedules",
+								":models_id"
+							],
+							"variable": [
+								{
+									"key": "models_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Schedules By Model Id Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:40008/api/v1/models/schedules/:models_id",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"schedules",
+										":models_id"
+									],
+									"variable": [
+										{
+											"key": "models_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 12:25:58 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "219"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success retrive data\",\n    \"title\": \"\",\n    \"data\": {\n        \"page_number\": 0,\n        \"page_size\": 0,\n        \"records\": [\n            {\n                \"id\": 1,\n                \"model_id\": 1,\n                \"schedule_date\": \"2021-12-12T14:04:24+07:00\"\n            }\n        ],\n        \"total_record_count\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Schedules",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model_id",
+									"value": "11",
+									"description": "M",
+									"type": "text"
+								},
+								{
+									"key": "schedule_date",
+									"value": "2021-12-12 14:04:24",
+									"description": "M",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:40008/api/v1/models/schedules/create",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"schedules",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Schedules",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "model_id",
+											"value": "1",
+											"description": "M",
+											"type": "text"
+										},
+										{
+											"key": "schedule_date",
+											"value": "2021-12-12 14:04:24",
+											"description": "M",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:40008/api/v1/models/schedules/create",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"schedules",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 13:18:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success create data\",\n    \"title\": \"\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Scheduler By Scheduer Id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model_id",
+									"value": "2",
+									"description": "O",
+									"type": "text"
+								},
+								{
+									"key": "schedule_date",
+									"value": "2021-12-12 14:04:21",
+									"description": "O",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:40008/api/v1/models/schedules/update/:schedule_id",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"schedules",
+								"update",
+								":schedule_id"
+							],
+							"variable": [
+								{
+									"key": "schedule_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Scheduler By Scheduer Id",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "model_id",
+											"value": "2",
+											"description": "O",
+											"type": "text"
+										},
+										{
+											"key": "schedule_date",
+											"value": "2021-12-12 14:04:21",
+											"description": "O",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:40008/api/v1/models/schedules/update/:schedule_id",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"schedules",
+										"update",
+										":schedule_id"
+									],
+									"variable": [
+										{
+											"key": "schedule_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 13:46:01 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success update data\",\n    \"title\": \"\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Schedules",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:40008/api/v1/models/schedules/delete/:schedule_id",
+							"host": [
+								"localhost"
+							],
+							"port": "40008",
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"schedules",
+								"delete",
+								":schedule_id"
+							],
+							"variable": [
+								{
+									"key": "schedule_id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Schedules",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:40008/api/v1/models/schedules/delete/:schedule_id",
+									"host": [
+										"localhost"
+									],
+									"port": "40008",
+									"path": [
+										"api",
+										"v1",
+										"models",
+										"schedules",
+										"delete",
+										":schedule_id"
+									],
+									"variable": [
+										{
+											"key": "schedule_id",
+											"value": "7"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Mar 2023 14:50:36 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Success delete data\",\n    \"title\": \"\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
